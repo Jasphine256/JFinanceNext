@@ -11,7 +11,19 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        'mobile-sm': '375px',
+        'mobile-lg': '425px',
+        'tablet': '768px',
+        'laptop': '1024px',
+        'desktop': '1280px',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+    require('tailwind-scrollbar'),
+
+  ],
 };
