@@ -1,7 +1,5 @@
 import "./globals.css";
 import TopNavigation from "@/components/fixed/TopNavigation";
-import Footer from "@/components/fixed/Footer";
-import SideBar from "@/components/fixed/SideBar";
 
 export const metadata = {
   title: "JFinance",
@@ -62,11 +60,10 @@ export default function RootLayout({ children }) {
         --> */}
       </head>
 
-      <body className="bg-zinc-950 text-white">
+      <body className="bg-zinc-950 text-white w-full h-full">
         <TopNavigation/>
         {/* <SideBar/> */}
         {children}
-        <Footer/>
       </body>
     </html>
   );
