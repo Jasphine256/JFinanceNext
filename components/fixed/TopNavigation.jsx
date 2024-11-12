@@ -27,7 +27,7 @@ function classNames(...classes) {
 
 export default function TopNavigation() {
   return (
-    <div className="min-w-full">
+    <nav className="min-w-full fixed top-0 left-0 z-50">
     <Disclosure as="nav" className="bg-gray-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
@@ -158,6 +158,6 @@ export default function TopNavigation() {
         </DisclosurePanel>
     </Disclosure>
     
-    </div>
+    </nav>
   )
 }
