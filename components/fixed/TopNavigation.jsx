@@ -8,17 +8,17 @@ const user = {
     'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 }
 const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'My Loans & Savings', href: '#', current: false },
-  { name: 'Transactions', href: '#', current: false },
-  { name: 'Penalties', href: '#', current: false },
-  { name: 'Help', href: '#', current: false },
-  { name: 'About', href: '#', current: false },
+  { name: 'Home', href: '/', current: true },
+  { name: 'My Loans & Savings', href: '/accounts', current: false },
+  { name: 'Transactions', href: '/transactions', current: false },
+  { name: 'Penalties', href: '/penalties', current: false },
+  { name: 'Messages', href: '/messages', current: false },
+  { name: 'About', href: '/about', current: false },
 ]
 const userNavigation = [
-  { name: 'Your Profile', href: '#' },
+  { name: 'Your Profile', href: '/profile' },
   { name: 'Help', href: '#' },
-  { name: 'Sign out', href: '#' },
+  { name: 'Sign out', href: '/signout' },
 ]
 
 function classNames(...classes) {
@@ -157,12 +157,6 @@ export default function TopNavigation() {
         </div>
         </DisclosurePanel>
     </Disclosure>
-
-    <header className="">
-        <div className="mx-auto max-w-7xl p-4 sm:px-6 lg:px-8">
-        <h1 className="text-2xl font-bold tracking-tight text-white">Home</h1>
-        </div>
-    </header>
     
     </div>
   )

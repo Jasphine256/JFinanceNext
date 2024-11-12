@@ -57,7 +57,7 @@ const people = [
   
   export default function ListColumn() {
     return (
-      <ul role="list" className="divide-y divide-gray-900 w-full p-2">
+      <ul role="list" className="divide-y divide-gray-900 w-full p-2 w-full tablet:w-2/3">
         {people.map((person) => (
           <div key={person.email} className="w-full">
             <ListItem person={person}/>

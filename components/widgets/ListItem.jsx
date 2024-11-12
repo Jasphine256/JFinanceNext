@@ -3,14 +3,14 @@ import React from 'react'
 const ListItem = (props) => {
   return (
     <li className="w-full flex justify-between gap-x-6 py-5">
-        <div className="flex min-w-0 gap-x-4">
+        <div className="flex min-w-1/2 gap-x-4">
             <img alt="" src={props.person.imageUrl} className="h-12 w-12 flex-none rounded-full bg-gray-50" />
             <div className="min-w-0 flex-auto">
             <p className="text-sm/6 font-semibold text-white">{props.person.name}</p>
             <p className="mt-1 truncate text-xs/5 text-white">{props.person.email}</p>
             </div>
         </div>
-        <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+        <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
             <p className="text-sm/6 text-white">{props.person.role}</p>
             {props.person.lastSeen ? (
             <p className="mt-1 text-xs/5 text-white">
