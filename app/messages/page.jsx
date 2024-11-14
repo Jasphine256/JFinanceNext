@@ -1,4 +1,4 @@
-import LoansList from "@/components/lists/LoansList"
+import MessageList from "@/components/lists/MessagesList"
 import PageTitle from "@/components/widgets/PageTitle"
 
 const sample = [
@@ -78,7 +78,7 @@ const Messages = () => {
   return (
     <main className="w-full flex flex-col items-center justify-center p-1 sm:p-4 mt-16">
         <PageTitle title={"Messages & Notificatios"}/>
-        <LoansList/>
+        <MessageList/>
     </main>
   )
 }

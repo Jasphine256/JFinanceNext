@@ -2,7 +2,7 @@ import { PaperClipIcon } from '@heroicons/react/20/solid'
 
 export default function DetailedView(props) {
   return (
-    <div className='w-full p-20'>
+    <div className='w-full tablet:w-2/3'>
       <div className="px-4 sm:px-0">
         <h3 className="text-base/7 font-semibold text-white">Applicant Information</h3>
         <p className="mt-1 max-w-2xl text-sm/6 text-gray-500">Personal details and application.</p>

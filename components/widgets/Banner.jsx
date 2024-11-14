@@ -9,7 +9,7 @@ const Banner = (props) => {
                 <Image alt="" src="https://img.icons8.com/3d-fluency/94/coins.png" width={100} height={100} className="h-12 w-12 flex-none" />
                 <h4 className="text-2xl">Bal: <span className="font-bold">UGX</span> {props.balance}</h4>
             </div>
-            <div className="p-4">
+            <div className="p-4 flex flex-row flex-warp justify-center items-center">
                 <button className="p-2 bg-green-950 rounded font-bold text-md mx-2">DEPOSIT</button>
                 <button className="p-2 bg-orange-950 rounded font-bold text-md mx-2">WITHDRAW</button>
                 <button className="p-2 bg-blue-950 rounded font-bold text-md mx-2">PAY LOAN</button>

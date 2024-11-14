@@ -11,48 +11,48 @@ const packages = [
   },
   {
     id: 2,
-    name: 'BASIC PACKAGE',
+    name: 'ADVANCED PACKAGE',
     imageSrc: '/images/package image.png',
     imageAlt: "loan packege.png",
-    amount: '100,000',
-    return: '110,000',
-    days: '30 days',
+    amount: '500,000',
+    return: '510,000',
+    days: '90 days',
   },
   {
     id: 3,
-    name: 'BASIC PACKAGE',
+    name: 'PLATINUM PACKAGE',
     imageSrc: '/images/package image.png',
     imageAlt: "loan packege.png",
-    amount: '100,000',
-    return: '110,000',
-    days: '30 days',
+    amount: '1,000,000',
+    return: '1,010,000',
+    days: '120 days',
   },
   {
     id: 4,
-    name: 'BASIC PACKAGE',
+    name: 'SILVER PACKAGE',
     imageSrc: '/images/package image.png',
     imageAlt: "loan packege.png",
-    amount: '100,000',
-    return: '110,000',
-    days: '30 days',
+    amount: '1,5000,000',
+    return: '1,5010,000',
+    days: '180 days',
   },
   {
     id: 5,
-    name: 'BASIC PACKAGE',
+    name: 'GOLD PACKAGE',
     imageSrc: '/images/package image.png',
     imageAlt: "loan packege.png",
-    amount: '100,000',
-    return: '110,000',
-    days: '30 days',
+    amount: '2,000,000',
+    return: '2,010,000',
+    days: '210 days',
   },
   {
     id: 6,
-    name: 'BASIC PACKAGE',
+    name: 'CUSTOM PACKAGE',
     imageSrc: '/images/package image.png',
     imageAlt: "loan packege.png",
-    amount: '100,000',
-    return: '110,000',
-    days: '30 days',
+    amount: 'ANY AMOUNT',
+    return: 'amount + 10% interest',
+    days: '60 days',
   },
 ]
 
@@ -75,7 +75,7 @@ export default function PackageRow(props) {
                 </div>
                 <div className="mt-4 flex justify-between">
                     <div>
-                      <h3 className="text-md font-bold text-white">{item.name}</h3>
+                      <h3 className="text-sm font-bold text-white">{item.name}</h3>
                       <p className="mt-1 text-sm text-white">{item.days}</p>
                     </div>
                     <div className="flex flex-col items-end">
